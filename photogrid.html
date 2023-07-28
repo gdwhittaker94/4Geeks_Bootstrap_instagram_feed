@@ -18,7 +18,7 @@
                 <span href="#" class="navbar-brand h1 text-muted">Instagram</span>
             </div>
             <div class="dropdown-center me-3">
-                <button type="button" class="btn btn-success me-3">Create a new post</button>
+                <button type="button" class="btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#newPostModal">Create a new post</button>
                 <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
                 </button>
@@ -33,6 +33,30 @@
         </div>
     </nav>
     
+    <!-- Modal -->
+    <div class="modal fade mt-5" id="newPostModal" tabindex="-1" aria-labelledby="New Post Modal" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <label for="caption" class="col-form-label"><h6>Caption:</h6></label>
+                    <textarea name="" id="caption" class="w-100 rounded-2 border-secondary mb-2"></textarea>                    
+                </form>
+                <button type="button" class="btn btn-light border-secondary"><i class="fa-solid fa-camera" style="color: #000000;"></i></button>
+                <button type="button" class="btn btn-light border-secondary"><i class="fa-solid fa-location-dot" style="color: #000000;"></i></button>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Publish</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
     <nav aria-label="Image Grid Navigation Pages">
         <ul class="pagination justify-content-center mt-3">
             <li class="page-item">
@@ -43,7 +67,6 @@
             </li>
         </ul>
     </nav>
-
 
     <!-- Body (Image Grid Column) -->
     <div class="container-fluid text-center">
@@ -61,13 +84,6 @@
             <img src="https://source.unsplash.com/random/300x300" alt="Random Image">
             <img src="https://source.unsplash.com/random/300x300" alt="Random Image">
         </div>
-
-
-
-
-        
-        
-      
 
 </body>
 </html>

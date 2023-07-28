@@ -18,7 +18,7 @@
                 <span href="#" class="navbar-brand h1 text-muted">Instagram</span>
             </div>
             <div class="dropdown-center me-3">
-                <button type="button" class="btn btn-success me-3">Create a new post</button>
+                <button type="button" class="btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#newPostModal">Create a new post</button>
                 <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
                 </button>
@@ -33,6 +33,30 @@
         </div>
     </nav>
     
+    <!-- Modal -->
+    <div class="modal fade mt-5" id="newPostModal" tabindex="-1" aria-labelledby="New Post Modal" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <label for="caption" class="col-form-label"><h6>Caption:</h6></label>
+                    <textarea name="" id="caption" class="w-100 rounded-2 border-secondary mb-2"></textarea>                    
+                </form>
+                <button type="button" class="btn btn-light border-secondary"><i class="fa-solid fa-camera" style="color: #000000;"></i></button>
+                <button type="button" class="btn btn-light border-secondary"><i class="fa-solid fa-location-dot" style="color: #000000;"></i></button>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Publish</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
     <nav aria-label="Image Grid Navigation Pages">
         <ul class="pagination justify-content-center mt-3">
             <li class="page-item active">
@@ -44,17 +68,17 @@
         </ul>
     </nav>
 
-
     <!-- Body (Image Grid Column) -->
     <div class="container-fluid container-xl">
         <div class="row justify-content-center">
             <div class="col-7 col-lg-6 col-xl-5">
                 <!-- CARD 1 -->
                 <div class="card mt-2 mb-4">
-                    <!--!!! Poner 08/28 a la derecha !!!-->
-                    <div class="card-head p-2">
-                        <h6>My crazy dog Spark!</h6>
-                        <span>08/28</span>
+                    <div class="card-head p-2 ">
+                        <div class="row">
+                            <h6 class="col-8">My crazy dog Spark!</h6>
+                            <span class="col text-end">08/28</span>
+                        </div>
                     </div>
                     <img src="https://source.unsplash.com/random/300x300/?dog" alt="Random Image">
                     <div class="card-body p-2">
@@ -64,10 +88,11 @@
                 </div>
                 <!-- CARD 2 -->
                 <div class="card my-4">
-                    <!--!!! Poner 08/28 a la derecha !!!-->
                     <div class="card-head p-2">
-                        <h6>The greatness of Croatia!</h6>
-                        <span>04/09</span>
+                        <div class="row">
+                            <h6 class="col-8">The greatness of Croatia!</h6>
+                            <span class="col text-end">04/09</span>
+                        </div>
                     </div>
                     <img src="https://source.unsplash.com/random/300x300/?croatia" alt="Random Image">
                     <div class="card-body p-2">
@@ -77,10 +102,11 @@
                 </div>
                 <!-- CARD 3 -->
                 <div class="card my-4">
-                    <!--!!! Poner 08/28 a la derecha !!!-->
                     <div class="card-head p-2">
-                        <h6>Amazing GOAL!</h6>
-                        <span>10/06</span>
+                        <div class="row">
+                            <h6 class="col-8">Amazing GOAL!</h6>
+                            <span class="col text-end">10/06</span>
+                        </div>
                     </div>
                     <img src="https://images.unsplash.com/photo-1580560230671-61e01dfdb285?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Random Image">
                     <div class="card-body p-2">
@@ -89,14 +115,8 @@
                     </div>
                 </div>
             </div>
-           
         </div>   
     </div>
 
 </body>
 </html>
-
-
-
-
-  
