@@ -14,7 +14,7 @@
     <nav class="navbar bg-light">
         <div class="container-fluid">
             <div>
-                <i class="fa-brands fa-instagram d-inline-block align-text-top" style="color: #000000;"></i>
+                <i class="fa-brands fa-instagram" style="color: #000000;"></i>
                 <span href="#" class="navbar-brand h1 text-muted">Instagram</span>
             </div>
             <div class="dropdown-center me-3">
@@ -32,31 +32,71 @@
             </div>
         </div>
     </nav>
-    <!-- Body (Image Grid) -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-2">  
-                <!-- Empty container -->
-            </div>
-            <div class="col-8">
-                <div class="card">
-                    <div class="card-head">
+    
+    <nav aria-label="Image Grid Navigation Pages">
+        <ul class="pagination justify-content-center mt-3">
+            <li class="page-item active">
+                <a href="./index.html" class="page-link" aria-label="One column"><i class="fa-regular fa-square" style="color: #000000;"></i></a>
+            </li>
+            <li class="page-item">
+                <a href="./photogrid.html" class="page-link" aria-label="Image grid"><i class="fa-solid fa-table-cells" style="color: #000000;"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- Body (Image Grid Column) -->
+    <div class="container-fluid container-xl">
+        <div class="row justify-content-center">
+            <div class="col-7 col-lg-6 col-xl-5">
+                <!-- CARD 1 -->
+                <div class="card mt-2 mb-4">
+                    <!--!!! Poner 08/28 a la derecha !!!-->
+                    <div class="card-head p-2">
                         <h6>My crazy dog Spark!</h6>
                         <span>08/28</span>
                     </div>
                     <img src="https://source.unsplash.com/random/300x300/?dog" alt="Random Image">
-                    <div class="card-body">
+                    <div class="card-body p-2">
                         <h6 class="card-title"> <i class="fa-regular fa-heart" style="color: #000000;"></i> 204 likes</h6>
-                        <p class="card-text">This is an example of a very good photo you can post on Instagram</p>
+                        <p class="card-text">This is an example of a very good photo you can post on Instagram.</p>
+                    </div>
+                </div>
+                <!-- CARD 2 -->
+                <div class="card my-4">
+                    <!--!!! Poner 08/28 a la derecha !!!-->
+                    <div class="card-head p-2">
+                        <h6>The greatness of Croatia!</h6>
+                        <span>04/09</span>
+                    </div>
+                    <img src="https://source.unsplash.com/random/300x300/?croatia" alt="Random Image">
+                    <div class="card-body p-2">
+                        <h6 class="card-title"> <i class="fa-regular fa-heart" style="color: #000000;"></i> 26,985 likes</h6>
+                        <p class="card-text">This is an example of a very good photo you can post on Instagram.</p>
+                    </div>
+                </div>
+                <!-- CARD 3 -->
+                <div class="card my-4">
+                    <!--!!! Poner 08/28 a la derecha !!!-->
+                    <div class="card-head p-2">
+                        <h6>Amazing GOAL!</h6>
+                        <span>10/06</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1580560230671-61e01dfdb285?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Random Image">
+                    <div class="card-body p-2">
+                        <h6 class="card-title"> <i class="fa-regular fa-heart" style="color: #000000;"></i> 1,000 likes</h6>
+                        <p class="card-text">This is an example of a very good photo you can post on Instagram.</p>
                     </div>
                 </div>
             </div>
-            </div>
-            <div class="col-2">
-                <!-- Empty container -->
-            </div>
-        </div>
+           
+        </div>   
     </div>
 
 </body>
 </html>
+
+
+
+
+  

@@ -1,0 +1,38 @@
+<!-- ROW1 -->
+<div class="row gy-5">
+    <div class="col">
+          <img src="https://source.unsplash.com/random/400x400" alt="Random Image">
+    </div>
+    <div class="col">
+          <img src="https://source.unsplash.com/random/400x400" alt="Random Image">
+    </div>
+    <div class="col">
+          <img src="https://source.unsplash.com/random/400x400" alt="Random Image">
+    </div>
+  </div>
+
+  <!-- ROW2 -->
+  <div class="row g-1">
+      <div class="col">
+          <img src="https://source.unsplash.com/random/400x400" alt="Random Image">
+      </div>
+      <div class="col">
+          <img src="https://source.unsplash.com/random/400x400" alt="Random Image">
+      </div>
+      <div class="col">
+          <img src="https://source.unsplash.com/random/400x400" alt="Random Image">
+      </div>
+  </div>
+
+  <!-- ROW3 -->
+  <div class="row g-1">
+      <div class="col">
+          <img src="https://source.unsplash.com/random/400x400" alt="Random Image">
+      </div>
+      <div class="col">
+          <img src="https://source.unsplash.com/random/400x400" alt="Random Image">
+      </div>
+      <div class="col">
+          <img src="https://source.unsplash.com/random/400x400" alt="Random Image">
+      </div>
+  </div>
