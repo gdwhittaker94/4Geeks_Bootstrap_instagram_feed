@@ -17,22 +17,26 @@
                 <i class="fa-brands fa-instagram" style="color: #000000;"></i>
                 <span href="#" class="navbar-brand h1 text-muted">Instagram</span>
             </div>
-            <div class="dropdown-center me-3">
-                <button type="button" class="btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#newPostModal">Create a new post</button>
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
-                    <li><a href="#" class="dropdown-item">Profile</a></li>
-                    <li><a href="#" class="dropdown-item">Accessibility</a></li>
-                    <li><a href="#" class="dropdown-item">Privacy and Data</a></li>
-                    <hr>
-                    <li><a href="#" class="dropdown-item text-danger">Log out</a></li>
-                </ul>
+            <div style="display:flex">
+                <div>
+                    <button type="button" class="btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#newPostModal">Create a new post</button>
+                </div>
+                <div class="dropdown-center me-3">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end d.flex">
+                        <li><a href="#" class="dropdown-item">Profile</a></li>
+                        <li><a href="#" class="dropdown-item">Accessibility</a></li>
+                        <li><a href="#" class="dropdown-item">Privacy and Data</a></li>
+                        <hr>
+                        <li><a href="#" class="dropdown-item text-danger">Log out</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
-    
+
     <!-- Modal -->
     <div class="modal fade mt-5" id="newPostModal" tabindex="-1" aria-labelledby="New Post Modal" aria-hidden="true">
         <div class="modal-dialog">
@@ -44,7 +48,7 @@
             <div class="modal-body">
                 <form>
                     <label for="caption" class="col-form-label"><h6>Caption:</h6></label>
-                    <textarea name="" id="caption" class="w-100 rounded-2 border-secondary mb-2"></textarea>                    
+                    <textarea name="" id="caption" class="w-100 rounded-2 border-secondary mb-2 p-2" placeholder="Add the caption of your post here"></textarea>                    
                 </form>
                 <button type="button" class="btn btn-light border-secondary"><i class="fa-solid fa-camera" style="color: #000000;"></i></button>
                 <button type="button" class="btn btn-light border-secondary"><i class="fa-solid fa-location-dot" style="color: #000000;"></i></button>
@@ -55,7 +59,7 @@
             </div>
         </div>
         </div>
-    </div>
+    </div>      
 
     <!-- Image Grid Toggles -->
     <nav aria-label="Image Grid Navigation Pages">
